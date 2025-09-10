@@ -37,6 +37,7 @@ To achieve this, I:
    (Usernames are case-sensitive)
 
 3. Make `wol.py` into an executable file.
-4. Deploy `event.xml` in Task Scheduler on the Active Directory server.  
-5. Link `argument.txt` so the Task Scheduler passes the login username to the script and make the scheduler run the `wol.exe` script like in the following example image. ![setup_example](argument_tutorial.png) 
-6. Test by logging in via VPN with a configured user account.  
+4. Add the usernames you want to abilitate to `event.xml` `(Data='massimo.dicanzio' or Data='username1' or Data='username2')`.  
+5. Deploy `event.xml` in Task Scheduler on the Active Directory server.  
+6. Link `argument.txt` so the Task Scheduler passes the login username to the script and make the scheduler run the `wol.exe` script like in the following example image. ![setup_example](argument_tutorial.png) 
+7. Test by logging in via VPN with a configured user account.  
